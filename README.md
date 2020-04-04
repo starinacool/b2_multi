@@ -10,7 +10,7 @@ Backblaze B2 PHP library with parallel operations via curl_multi
 
 # Description
 
-This class uses redis to cache access information for performance and cost saving reasons. With this class you canupload and download files simultaniusly.
+This class uses redis to cache access information for performance and cost saving reasons. With this class you can upload and download files simultaniusly. Downloading is performed via Clouflare & Backblaze parnership to cut download costs to zero.
 
 
 # Examples:
