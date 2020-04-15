@@ -238,7 +238,7 @@ class B2 {
 			
 		}
 
-    public function __construct($access_key, $secret_key, $downloadEndpoint, $redis ,$curl_opts=[CURLOPT_CONNECTTIMEOUT => 30,CURLOPT_LOW_SPEED_LIMIT => 1,CURLOPT_LOW_SPEED_TIME => 30], $endpoint = null) {
+    public function __construct($access_key, $secret_key, $downloadEndpoint, Redis $redis ,$curl_opts=[CURLOPT_CONNECTTIMEOUT => 30,CURLOPT_LOW_SPEED_LIMIT => 1,CURLOPT_LOW_SPEED_TIME => 30], $endpoint = null) {
         $this->access_key = $access_key;
         $this->secret_key = $secret_key;
         $this->curl_opts = $curl_opts;
