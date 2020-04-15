@@ -432,10 +432,11 @@ class B2 {
 					$results=$this->execMulti($sessions);
 
 					foreach ( $results as $k => $result ) {
+						
+						$cOK=$this->curlOK($result['curl'],$result['body'])
+						$out[]=['result'=>$cOK,'stats'=>$result['stats']];
 
-						$out[]=['result'=>$this->curlOK($result['curl'],$result['body']),'stats'=>$result['stats']];
-
-						if ( end($out) ) {
+						if ( $cOK ) {
 
 							$this->returnUploadUrl($bucket,$URL[$k]);
 						}
